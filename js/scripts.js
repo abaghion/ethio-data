@@ -84,12 +84,12 @@ $.getJSON("data/mps_5th_" + lang + ".json", function (data) {
             // photo img
             $(".pol-" + i).append("<div class='pol-photo'></div>");
 
-            $(".pol-" + i + " .pol-photo").append("<a target='_blank' href='" + d.url + "'><img src='" + url + "img/pol/" + d.photo + "' /></a>");
+            $(".pol-" + i + " .pol-photo").append("<a target='_blank' href='#'><img src='" + url + "img/pol/" + d.photo + "' /></a>");
 
             // text
             $(".pol-" + i).append("<div class='pol-text'></div>")
 
-            $(".pol-" + i + " .pol-text").append("<a target='_blank' href='" + d.url + "'><div class='pol-name'>" + d.name + "</div></a>");
+            $(".pol-" + i + " .pol-text").append("<a target='_blank' href='#'><div class='pol-name'>" + d.name + "</div></a>");
             // $(".pol-" + i + " .pol-text").append("<div class='pol-cases'>Accused in <span class='case-number'>" + d.communal_cases + "</span> communal " + (d.communal_cases > 1 ? "cases" : "case") + "</div>");
 
             $(".pol-" + i + " .pol-text").append("<div class='pol-sub pol-party'><b>" + d.party + "</b></div>");
