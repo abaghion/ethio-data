@@ -1,0 +1,14 @@
+{
+  "name": "communal-mlas-list",
+  "version": "1.0.0",
+  "description": "Politicians in Ethiopian parliament",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "uglifyjs js/template.js -c -m -o js/template.min.js; uglifyjs js/scripts.js -c -m -o js/scripts.min.js; uglifyjs js/smartresize.js -c -m -o js/smartresize.min.js; yuicompressor css/styles.css -o css/styles.min.css; yuicompressor css/template.css -o css/template.min.css"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.17.4",
+    "yuicompressor": "^2.4.8"
+  }
+}

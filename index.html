@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Politicians in Ethiopian parliament</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- google webfonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Serif:400,400i,700" rel="stylesheet">
+
+    <!-- css cdns, use as needs -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/fonts/FontAwesome.otf"/>
+
+    <!-- custom css -->
+    <!-- Rembember to Minify! -->
+    <link rel="stylesheet" href="css/template.min.css"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="titles-wrapper">
+        <h1 class="headline">Members of Ethiopian Parliament</h1>
+        <h2 class="byline">5th Term</h2>
+        <hr class="blue-line"/>
+    </div>
+
+    <div class="copy">
+        <p>
+            This is NOT an official site of the HPR of FDRE. It is an initiative totally independent of public
+            institutions.
+        </p>
+        <p>
+            All the data relating to parliament members presented on this site come from the site of the HPR of FDRE
+            (hopr.gov.et). It is therefore entirely public information. Only the personal web pages of Members of
+            Parliament and their Facebook and Twitter profiles are occasionally completed humanely upon identification
+            or report.
+        </p>
+    </div>
+
+    <div class="controls-wrapper" align="center">
+        <div class="control control-sort">
+            Sort by
+            <select>
+                <option value="name">Name</option>
+                <option value="party">Party</option>
+                <option value="region">Region</option>
+            </select>
+        </div>
+        <div class="control control-filter">
+            Filter by
+            <select data-column="party" class="select-party">
+                <option value="all">Parties</option>
+            </select>
+            <select data-column="region" class="select-region">
+                <option value="all">Regions</option>
+            </select>
+            <select data-column="gender" class="select-gender">
+                <option value="all"> Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div class="control clear-filters inactive">
+            <i class="fa fa-undo" aria-hidden="true"></i> Reset
+        </div>
+
+
+    </div>
+
+    <div class="row" align="center">
+        <div id="stats"></div>
+    </div>
+
+    <div class="pols-wrapper"></div>
+
+    <div class="copy" style="margin-top: -20px">
+        <p>
+            According to the FDRE constitution article 53, the Federal Democratic Republic of Ethiopia has two Federal
+            Houses: The House of Peoples’ Representatives and House of the Federation. Accordingly, these Houses have
+            been established since August 1995. The House of Peoples’ Representatives is the highest authority of the
+            federal government.
+        </p>
+        <p>
+            Members of the House of peoples’ Representatives shall be elected from candidates in
+            each electoral district by a plurality of the votes cast by the people for a term of five years on the basis
+            of universal suffrage and by direct, free and fair election held by secret ballot.
+        </p>
+        <p>
+            Members of the House, on the basis of population and special representation of minority Nationalities and
+            Peoples, shall not exceed 550; of these, minority Nationalities and Peoples shall have at least 20 seats.
+            According to the provision in the article 50(3) of the constitution, the House of Peoples’ Representatives
+            is responsible to the people.
+        </p>
+        <p>
+            Powers and Functions of the House of Peoples’ Representatives
+        </p>
+        <p>
+            The House has powers and functions stated in the constitution, articles 55, 70(1), 79(4) (c), 82(2) (c),
+            101, 102, 103, and 104. The following are the main powers and functions of the House:
+
+        <ul>
+            <li>Enacting laws,</li>
+            <li>Scrutinizing and endorsing the federal government budget,</li>
+            <li> Overseeinggovernment bodies’ operations and where necessary to take a measure against,</li>
+            <li> Establishing and organizing its own various committees and other important organs,</li>
+            <li> Electing and approving the appointment of government officials proposed by government and/or nominated
+                by itself,
+            </li>
+            <li> Making an arrangement for MPs of the House to meet their respective constituents in course of
+                discharging their public representation duty.
+            </li>
+        </ul>
+        </p>
+
+
+    </div>
+
+
+</div>
+
+
+<footer class="footer-basic-centered">
+    <p class="footer-links">
+        <a href="/">Home</a>
+        &bull;
+        <a href="#">Contact</a>
+        &bull;
+        <a href="#">Privacy</a>
+        &bull;
+        <a href="#">Disclaimer</a>
+    </p>
+
+    <p class="footer-company-name">
+        &copy; 2023
+    </p>
+</footer>
+
+<!-- js cdns, use as needed -->
+<script src="https://unpkg.com/party-time@2.0.3/lib/party-time.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://unpkg.com/jeezy@1.7.1/lib/jeezy.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+<!-- custom js -->
+<script src="js/smartresize.min.js"></script>
+<script src="js/template.min.js"></script>
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
